@@ -7,28 +7,53 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+<style>
+.logo {
+  display: inline-block;
+  height: 100%;
+}
+
+.logo>img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo img {
+  width: 25%;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo img {
+    width: 70%;
+  }
+}
+</style>
 <body>
   <nav class="blue lighten-2" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo white-text">Rahul Narvekar</a>
+      <a class="logo">
+        <img src="logo.png">
+      </a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="white-text" href="#about">About</a></li>
-        <li><a class="white-text" href="#experience">Experience</a></li>
-        <li><a class="white-text" href="#community">Community</a></li>
-        <li><a class="white-text" href="#certifications">Certs and Skills</a></li>
-        <li><a class="white-text" href="#projects">Projects</a></li>
-        <li><a class="white-text" href="#resume">Resume</a></li>
+        <li><a class="white-text" href="#about"><i class="material-icons">contact_mail</i></a></li>
+        <li><a class="white-text" href="#experience"><i class="material-icons">work_outline</i></a></li>
+        <li><a class="white-text" href="#community"><i class="material-icons">people</i></a></li>
+        <li><a class="white-text" href="#certifications"><i class="material-icons">card_membership</i></a></li>
+        <li><a class="white-text" href="#projects"><i class="material-icons">code</i></a></li>
+        <li><a class="white-text" href="#resume"><i class="material-icons">notes</i></a></li>
       </ul>
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#community">Community</a></li>
-        <li><a href="#certifications">Certs and Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a href="#about"><i class="material-icons">contact_mail</i>About</a></li>
+        <li><a href="#experience"><i class="material-icons">work_outline</i>Experience</a></li>
+        <li><a href="#community"><i class="material-icons">people</i>Leadership</a></li>
+        <li><a href="#certifications"><i class="material-icons">card_membership</i>Certifications</a></li>
+        <li><a href="#projects"><i class="material-icons">code</i>Projects</a></li>
+        <li><a href="#resume"><i class="material-icons">notes</i>Resume</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -216,7 +241,7 @@
         <div class="row center">
           <h3 class="center blue-text lighten-2">Certifications</h3>
         </div>
-        <div class="col s12 m6" style="border-right: 2px solid  #000;">
+        <div class="col s12 m6">
           <div class="icon-block">
             <div class="row center">
               <h5 class="center blue-text text-darken-4">AWS Deveoper Associate</h5>
@@ -265,7 +290,7 @@
         <div class="row center">
           <h3 class="center blue-text lighten-2">Projects</h3>
         </div>
-        <div class="col s12 m6" style="border-right: 2px solid  #000;">
+        <div class="col s12 m6">
           <div class="icon-block">
             <div class="row center">
               <h5 class="center blue-text text-darken-4">SwiftTrip</h5>
